@@ -70,9 +70,9 @@
                                 <button class = "selColor gris" alt="Selector de color 3"></button>
                                 <button class = "selColor blanco" alt="Selector de color 4"></button>
                             </div>
-                            <div>
+                            <div class="numproductos">
                                 <label for="unidades">Cantidad:</label>
-                                <select name="unidades" id="numproductos">
+                                <select name="unidades" class="numproductos selector">
                                     <option value="1">1 Unidad</option>
                                     <option value="2">2 Unidades</option>
                                     <option value="3">3 Unidades</option>
@@ -84,11 +84,10 @@
                         </div>
                         <div class="textcard3 derecha">
                             <ul>
-                                <li>Alta duracion de bateria.</li>
-                                <li>Comodo y practico.</li>
+                                <li>Alta duración de batería.</li>
+                                <li>Cómodo y práctico.</li>
                                 <li>Tamaño compacto.</li>
-                                <li>Alta precision de medicion.</li>
-                                <li>Alta precision de medicion.</li>
+                                <li>Alta precisión de medición.</li>
                             </ul>
                             <h2 class="subtitulo">COP$240.000</h2>
                         </div>
@@ -98,7 +97,8 @@
                     <div class="itemFacturacion direccion">
                         <h2>Dirección de Envío:</h2>
                         <form class="formulario">
-                                <div class="itemForm">
+                            <div class="formulario2">
+                                <div class="itemForm derecha">
                                     <label for="nombre">Nombre:</label>
                                     <input type="text" id="nombre" name="nombre" required>
                 
@@ -109,7 +109,7 @@
                                     <input type="text" id="ciudad" name="ciudad" required>
                                 </div>
             
-                                <div  class="itemForm">
+                                <div  class="itemForm izquierda">
                                     <label for="departamento">Departamento:</label>
                                     <input type="text" id="departamento" name="departamento" required>
                 
@@ -118,15 +118,15 @@
                 
                                     <label for="codigo_postal">Código Postal:</label>
                                     <input type="text" id="codigo_postal" name="codigo_postal" required>
-                
                                 </div>
+                            </div>
                                 <div class="itemForm2">
                                     <div class="itemForm2 detalles">
                                         <label for="detalles">Detalles Adicionales:</label><br>
                                         <input type="text"  id="detalles" name="detalles" required>
                                     </div>
-                                    <button>
-                                        <span><h3>Confirmar dirección</h3></span>
+                                    <button class="itemForm2 boton">
+                                        <span><h4>Confirmar dirección</h4></span>
                                     </button>
                                 </div>         
                         </form>
@@ -135,7 +135,7 @@
                 </div>           
                 <div class="itemFacturacion resumen">
                     <div class="itemFacturacion resumen top">
-                        <h1>Resumen de pedido</h1>
+                        <h2>Resumen de pedido</h2>
                         <div>
                             <a href="comprafinal.html" class="Boton2">
                                 <button href="Facturacion.html">
@@ -144,20 +144,20 @@
                                 </button>
                             </a>
                         </div> 
-                        <p>Al realizar el pedido, aceptas los terminos y condicones de uso y envio de Homy</p>
+                        <p>Al realizar el pedido, aceptas los términos y condiciones de uso y envío de Homy</p>
                     </div>
                     <div class="itemFacturacion resumen center">
                         <hr class="linea"></hr>
                         <h2>Confirmación de pedido</h2>
                         <div>
                             <ul>
-                                <li class="listpedido"><h3>Productos</h3><h3>COP $240.000</h3></li>
-                                <li class="listpedido"><h3>Costo de envio</h3><h3>COP $15.000</h3></li>
+                                <li class="listpedido"><h4>Productos</h4><h4>COP $240.000</h4></li>
+                                <li class="listpedido"><h4>Costo de envío</h4><h4>COP $15.000</h4></li>
                                 <hr class="linea"></hr>
-                                <li class="listpedido"><h3>Total sin IVA</h3><h3>COP $315.000</h3></li>
-                                <li class="listpedido"><h3>IVA</h3><h3>COP $45.600</h3></li>
+                                <li class="listpedido"><h4>Total sin IVA</h4><h4>COP $315.000</h4></li>
+                                <li class="listpedido"><h4>IVA</h4><h4>COP $45.600</h4></li>
                                 <hr class="linea"></hr>
-                                <li class="listpedido"><h2>Total del pedido</h2><h2>COP $300.600</h2></li>
+                                <li class="listpedido"><h3>Total del pedido</h3><h4>COP $300.600</h4></li>
                             </ul>                    
                         </div>
                     </div>
@@ -181,7 +181,7 @@
             </div>
         </div>
         <div class="texto1">
-            <h2 class="subtitulo">Terminos de envio:</h2>
+            <h2 class="subtitulo">Términos de envío:</h2>
             <p>Si se encuentra dentro de Bogotá, el producto será entregado a más tardar al día siguiente. 
                 En caso de que el producto haya sido comprado antes de las 4 de la tarde, será enviado el mismo 
                 día. En caso de encontrarse por fuera de Bogotá, el tiempo estimado será dado por la transportadora 

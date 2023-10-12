@@ -13,6 +13,20 @@ a{
 
 h2{
     text-decoration: none;
+    font-size: 30px;
+}
+
+h3{
+    font-size: 22px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.425;
 }
 
 body{
@@ -20,6 +34,7 @@ body{
     flex-direction: column;
     /*min-height: 1000px;*/
     height: 100%;
+    background-color: white;
 }
 
 html{
@@ -139,12 +154,12 @@ footer{
     padding: 8px;
     
     align-self: flex-end;
-    width: 100%;
-    /*position: fixed;
-    left: 0px;
-    bottom: 0px;
-    */
-    
+    width: 100%;    
+}
+
+footer img{
+    width: 50px; 
+    height: 80px;
 }
 
 .navlink2{
@@ -184,7 +199,6 @@ footer{
     display: flex;
     z-index: -1;
     position: relative;
-    background-color: violet;
 }
 
 .slider2{
@@ -256,6 +270,7 @@ footer{
 
 .Boton1 button h3{
     padding-left: 10px;
+    font-size: 20px;
 }
 
 /*Card Info Aguacate*/
@@ -286,7 +301,7 @@ footer{
 .textcard2.centro p{
     padding-left: 10px;
     padding-right: 20px;
-    line-height: 1.625;
+    line-height: 1.425;
 }
 
 .textcard2 h3{
@@ -321,9 +336,7 @@ footer{
     padding-bottom: 20px;
 }
 
-.texto1 p{
-    line-height: 1.2;
-}
+
 /*VIDEO*/
 .VideoPublicidad{
     display: flex;
@@ -344,7 +357,7 @@ footer{
     display: flex; 
     flex-direction:row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 30px;
 }
@@ -357,6 +370,7 @@ footer{
     background-color: #E8E8E8;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .cardImg img{
@@ -364,7 +378,7 @@ footer{
 }
 
 .textcard h2{
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .textcard{
@@ -408,13 +422,14 @@ footer{
 }
 
 .infProducto h2{
-    font-size: 32px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     font-style: italic;
 }
 
 .infProducto h3{
+    font-size: 22px;
     display: flex;
     justify-content: center;
 }
@@ -429,6 +444,7 @@ footer{
 
 .infProducto ul>li{
     padding: 10px;
+    font-size: 20px;
 }
 
 #priceTag{
@@ -438,6 +454,7 @@ footer{
 }
 
 #priceTag h2{
+    
     padding-left: 5px;
     font-weight: normal;
     font-style: normal;
@@ -500,19 +517,23 @@ footer{
     height: 367px;
 }
 
+.infPagos h3{
+    font-size: 22px;
+}
+
 /*Boton2*/
+
 .Boton2 button{
     padding: 2px 15px;
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-right: 60px;
+    justify-content: center;
+
     background-color: #3AC78B;
     border: none;
     border-radius: 10px;
-    margin-top: 20px;
     cursor: pointer;
-    width: 340px;
+    margin: auto 60px;    
 }
 
 .Boton2 button h3{
@@ -529,6 +550,7 @@ footer{
 
 .listatributos ul>li{
     padding: 10px;
+    font-size: 16px;
 }
 /*PRODUCTO FINAL*/
 
@@ -570,6 +592,11 @@ footer{
     border-radius: 10px;
 }
 
+.genPreguntasFrecuentes h2{
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
 .v-line{
     display: flex;
     height: 350px;
@@ -589,11 +616,11 @@ footer{
 }
 
 .listPreguntas{
-    /*flex: 0 0 50%;*/
     flex-grow: 1;
     width: 50%;
     border-right-style: solid;
     justify-content: flex-start;
+    margin-bottom: 20px;
 }
 .listPreguntas ul{
     display: flex;
@@ -607,8 +634,7 @@ footer{
     background-color: #D9D9D9;
     padding: 10px;    
     border: #D9D9D9;
-    font-weight: bold;
-    
+    font-size: 20px;
 }
 .selPregunta:hover{
     border: black;
@@ -625,9 +651,12 @@ footer{
 }
 .respuesta h4{
     font-style: italic;
-    padding-top: 30px;
-    padding-bottom: 5px;
-    
+    padding-bottom: 5px;  
+    padding-top: 10px;
+}
+
+.respuesta p{
+    padding-bottom: 25px;  
 }
 
 /*SOPORTE FINAL*/
@@ -677,15 +706,11 @@ footer{
     color: #1DA86D;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 40px;
+    padding-bottom: 30px;
 }
 .containerAboutUs p{
-    font-size: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    line-height: 1.625;
-    padding: 50px 50px 0 50px;
+    line-height: 1.425;
+    padding: 0 50px;
 }
 
 .bannerAboutUs h1{
@@ -710,7 +735,7 @@ footer{
 }
 
 .contentAboutUs{
-    margin: 20px;
+    margin: 30px 20px;
 }
 
 /*SOBRE NOSOTOS FINAL*/
@@ -744,6 +769,19 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 10px;
+
+}
+
+.numproductos{
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.numproductos.selector option{
+    font-size: 15px;
 }
 
 .textcard3.centro h2{
@@ -767,6 +805,7 @@ footer{
 
 .textcard3.derecha li{
     margin-bottom: 10px;
+    font-size: 17px;
 }
 
 .itemFacturacion.resumen{
@@ -786,8 +825,8 @@ footer{
 }
 
 .itemFacturacion.resumen.top h2{
-    font-weight: normal;
-    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 20px;
 }
 
 .itemFacturacion.resumen.top p{
@@ -797,6 +836,10 @@ footer{
 
 .itemFacturacion.resumen.center {
     padding: 0 15px 0 15px;
+}
+
+.itemFacturacion.resumen.center h2{
+    font-size: 25px;
 }
 
 .itemFacturacion.resumen.center li{
@@ -890,6 +933,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 .itemFacturacion.pago h2{
@@ -922,6 +966,12 @@ footer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    font-size: 18px;
+}
+
+.formulario2{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .acomodarForm{
@@ -936,13 +986,16 @@ footer{
     flex-direction: column;
 }
 
+.itemForm.izquierda{
+    margin-left: 15px;
+}
+
 .itemForm2{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    flex: auto;
     /*padding-left: 10px;
     padding-right: 10px;*/
 }
@@ -953,6 +1006,7 @@ footer{
     display: flex;
     align-self: flex-end;
     width: 30%;
+    flex: 1;
 }
 
 .itemForm2.detalles{
@@ -1022,14 +1076,14 @@ footer{
 .polyLegal a{
     position: absolute;
     top: 25%;
-    left: 45%;
+    left: 46%;
 }
 
 
 
 .polyLegal img{
-    width: 162px; 
-    height: 272px;
+    width: 130px; 
+    height: 190px;
 }
 
 .listinte{
@@ -1062,6 +1116,11 @@ footer{
     padding: 20px;
     padding-left: 30px;
     color: #1DA86D;
+}
+
+.legal p{
+    font-size: 16px;
+    padding-left: 10px;
 }
 
 .legal ol{
@@ -1112,7 +1171,7 @@ footer{
     padding-bottom: 15px;
     font-size: 40px;
 }
-#agradecimiento>h2{
+#agradecimiento>h3{
     color: white;
     padding: 15px;
 }
@@ -1129,7 +1188,7 @@ footer{
 }
 
 
-.EnlaceCard h2{
+.EnlaceCard h3{
     text-align: center;
     font-style: italic;
 }
@@ -1143,6 +1202,10 @@ footer{
 /*AGRADECIMIENTO COMPRA FINAL*/
 
 @media (max-width:1249px){
+
+    header{
+        z-index: 1;
+    }
     .genFacturacion{
         flex-wrap: wrap;
         justify-content: center;
@@ -1166,6 +1229,11 @@ footer{
 
     .itemFacturacion.pago{
         flex-wrap: wrap;
+
+    }
+
+    .textcard3.derecha li{
+        font-size: 18px;
     }
 
     .itemFacturacion.resumen{
@@ -1178,10 +1246,9 @@ footer{
         gap: 20px;
         justify-content: space-around;
         margin-bottom: 20px;
+        padding: 20px 0;
     }
-    .textcard3.centro {
-        gap: 10px;
-    }
+
 }
 
 @media (max-width:900px){
@@ -1276,7 +1343,8 @@ footer{
     .textslider2 h2{
         font-weight: lighter;
         font-style: italic;
-        margin-right: 20px ;
+        margin-right: 20px;
+        font-size: 20px;
     }
    
     .card2{  
@@ -1326,23 +1394,22 @@ footer{
     .legal h2{
         text-align: center;
     }
-    .legal ol>li h3 {
+
+    .legal ol>li h3{
         text-align: justify;
-        padding-left: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
         margin: 10px;
     }
 
     .polyLegal a{
-        position: absolute;
-        top: 20%;
+        top: 10%;
         left: 40%;
     }
     
     .polyLegal img{
-        width: 72px; 
-        height: 110px;
+        width: 100px; 
+        height: 160px;
     }
 
     .legal ol{
@@ -1361,6 +1428,12 @@ footer{
     /*LEGAL FINAL*/
     
     /*Soporte Inicial*/
+
+    #polysoporte a{
+        top: 10%;
+        left: 40%;
+    }
+
     .contentPreguntas{
         display: flex; 
         flex-direction: column;
@@ -1419,16 +1492,49 @@ footer{
     }
     .containerAboutUs p{
         font-size: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        line-height: 1.625;
-        padding: 0px;
+        padding: 20px 0;
         margin-bottom: 20px;
+    }
+
+    .slider3 {
+        display: flex;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+        z-index: -1;
     }
     
     /*sobre nosotros fin*/
 
+    /*Producto Inicio*/
+    .itemFacturacion.revisar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario2{
+        flex-direction: column;
+    }
+
+    .itemForm.izquierda {
+        margin-left: 0;
+    }
+
+    /*Producto Final*/
+
+    /*facturacion inicio*/
+    .itemForm2 button{
+        width: 50%;
+    }
+    /*facturacion final*/
+
     /*footer Inicio*/
+    footer img{
+        width: 40px; 
+        height: 70px;
+    }
+
     .navlink2 a{
         /*font-weight: 100;*/
         font-size: 8px;
