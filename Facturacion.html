@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-sc">
 
+<!--
+            llamado al javascript
+            -->
+
+    <script src="facturacion.js"></script>
+
     <link rel="stylesheet" href="estilos.css">
     <title>Homy</title>
 </head>
@@ -54,13 +60,9 @@
                 <!-- Div con revision y direccion-->
                 <div class="RevDir">
                     <div class="itemFacturacion revisar">
-                        <div >
-                            <!--<img src="Imagenes\Flecha1.png" alt="Flechas para avanzar imagenes" width="50" height="50">
-                            <img src="Imagenes\producto 1.jpg" alt="Planta de Aguacate en una maceta" width="560" height="560">
-                            <img src="Imagenes\Flecha2.png" alt="Flechas para avanzar imagenes" width="50" height="50">
-                            <img src="Imagenes\producto 2.jpg" alt="Planta de Aguacate en una maceta" width="560" height="560">-->
-                            <img src="Imagenes\Jardinerito1.png" alt="Planta de Aguacate en una maceta" width="272" height="100%">
-                        </div>
+                        <div class="imgproducto" id="imgProduct"><!--SLIDER DEL PRODUCTO-->
+                <img src="Imagenes\Jardinerito-Verde.png" alt="Dispositivo color verde">
+            </div>
                         <div class="textcard3 centro">
                             <h2>Revisar Articulos</h1>
                             <h3>Jardinerito - Verde</h2>
@@ -125,9 +127,7 @@
                                         <label for="detalles">Detalles Adicionales:</label><br>
                                         <input type="text"  id="detalles" name="detalles" required>
                                     </div>
-                                    <button class="itemForm2 boton">
-                                        <span><h4>Confirmar dirección</h4></span>
-                                    </button>
+
                                 </div>         
                         </form>
                     </div>
@@ -151,13 +151,13 @@
                         <h2>Confirmación de pedido</h2>
                         <div>
                             <ul>
-                                <li class="listpedido"><h4>Productos</h4><h4>COP $240.000</h4></li>
-                                <li class="listpedido"><h4>Costo de envío</h4><h4>COP $15.000</h4></li>
+                                <li class="listpedido"><h4>Productos</h4><h4 id="Productos">COP $240.000</h4></li>
+                                <li class="listpedido"><h4>Costo de envío</h4><h4 id="Envio">COP $15.000</h4></li>
                                 <hr class="linea"></hr>
-                                <li class="listpedido"><h4>Total sin IVA</h4><h4>COP $315.000</h4></li>
-                                <li class="listpedido"><h4>IVA</h4><h4>COP $45.600</h4></li>
+                                <li class="listpedido"><h4>Total sin IVA</h4><h4 id="TotalSinIva">COP $315.000</h4></li>
+                                <li class="listpedido"><h4>IVA</h4><h4 id="TotalIVA">COP $45.600</h4></li>
                                 <hr class="linea"></hr>
-                                <li class="listpedido"><h3>Total del pedido</h3><h4>COP $300.600</h4></li>
+                                <li class="listpedido"><h3>Total del pedido</h3><h4 id="TotalCompra">COP $300.600</h4></li>
                             </ul>                    
                         </div>
                     </div>
@@ -174,11 +174,11 @@
             <div class="itemFacturacion pago">
                 <h2>Método de pago:</h2>
                 <div class="selectorpago">                                                              
-                    <img src="Imagenes\Mercadopago.png" alt="Logo de la empresa Mercado Pago" width="150" height="150">
-                    <img src="Imagenes\Nequi.png" alt="Logo de la empresa Nequi" width="150" height="150">
-                    <img src="Imagenes\daviplata.png" alt="Logo de la empresa PSE" width="150" height="150">
+                    <img class="pagoImg" src="Imagenes\Mercadopago.png" alt="Logo de la empresa Mercado Pago" width="150" height="150">
+                    <img class="pagoImg" src="Imagenes\Nequi.png" alt="Logo de la empresa Nequi" width="150" height="150">
+                    <img class="pagoImg" src="Imagenes\daviplata.png" alt="Logo de la empresa PSE" width="150" height="150">
                 </div>
-            </div>
+            </div>            
         </div>
         <div class="texto1">
             <h2 class="subtitulo">Términos de envío:</h2>
